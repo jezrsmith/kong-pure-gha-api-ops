@@ -59,4 +59,3 @@ components:
             properties:
               message:
                 type: string
-
