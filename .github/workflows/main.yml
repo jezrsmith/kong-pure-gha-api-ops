@@ -28,7 +28,7 @@ jobs:
           VERSION=`git tag -l --sort -version:refname | head -n 1`
 
           #if no existing tag - set default version to 1.0.0
-          if [!"$VERSION"]; then
+          if !["$VERSION"]; then
               VERSION=1.0.0
           fi
           echo "ver: $VERSION"
